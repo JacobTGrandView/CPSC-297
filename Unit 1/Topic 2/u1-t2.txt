@@ -1,0 +1,24 @@
+Literals: A data value that appears directly in a program.
+	  Ex: "hello world" // This is a string of text
+	  Ex: 7 // The number 7
+	  Ex: true // boolean value
+
+
+Comments: Text ignored by JavaScript. Can be used to explain what somethings does in the code.
+	  Ex: // is a single line comment. 
+	  Ex: /* */ is a multi line comment.
+
+
+Identifiers: A name for constants, variables, properties, functions, classes and to provide labels 	   	     for certain loops. Identifiers must begin with a letter, an _, or a $. 
+	     Ex: this_is_a_identifier
+	     Ex: let jacobsIdentifier = 5
+
+
+Reserved Words: Words that usually start off a statement to identify the action that will be performed.
+		Can't be used for names of constants, variables, functions, classes.
+	 	Ex: let //declares a variable
+
+
+Semi-Colons: Semicolons separate JavaScript statements
+	     Ex: let x, y, z;
+	     x = 1, y = 2, z = 3;

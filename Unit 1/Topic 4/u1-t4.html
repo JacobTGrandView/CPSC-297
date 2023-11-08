@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Expressions and Operators Assignment</title>
+</head>
+<body>
+    <h1>JavaScript Expressions and Operators Assignment</h1>
+    <h2>Task 1: Math Expressions</h2>
+    <button onclick="performMathOperations()">Perform Math Operations</button>
+    <p id="mathResults"></p>
+
+    <h2>Task 2: Comparison Expressions</h2>
+    <button onclick="checkDrinkingAge()">Check Drinking Age</button>
+    <p id="ageMessage"></p>
+
+    <h2>Task 3 and 4: Logical Expressions and Conditional Statements</h2>
+    <button onclick="checkLegalDrinkingAge()">Check Legal Drinking Age</button>
+    <p id="legalDrinkingMessage"></p>
+
+    <h2>Task 5: String Concatenation</h2>
+    <button onclick="combineNames()">Combine Names</button>
+    <p id="greetingMessage"></p>
+
+    <script>
+        // JavaScript code for the assignment tasks
+
+        // Task 1: Math Expressions
+        function performMathOperations() {
+            let num1 = parseFloat(prompt("Enter the first number:"));
+            let num2 = parseFloat(prompt("Enter the second number:"));
+
+            let addition = num1 + num2;
+            let subtraction = num1 - num2;
+            let multiplication = num1 * num2;
+            let division = num1 / num2;
+
+            document.getElementById("mathResults").textContent = "Addition: " + addition + ", Subtraction: " + subtraction + ", Multiplication: " + multiplication + ", Division: " + division;
+        }
+
+        // Task 2: Comparison Expressions
+        function checkDrinkingAge() {
+            let userAge = parseInt(prompt("Enter your age:"));
+            let legalDrinkingAge = 21;
+
+            if (userAge >= legalDrinkingAge) {
+                document.getElementById("ageMessage").textContent = "You are of legal drinking age.";
+            } else {
+                document.getElementById("ageMessage").textContent = "You are not of legal drinking age.";
+            }
+        }
+
+        // Task 3 and 4: Logical Expressions and Conditional Statements
+        function checkLegalDrinkingAge() {
+            let userAge = parseInt(prompt("Enter your age:"));
+            let hasValidID = confirm("Do you have a valid ID?");
+
+            if (userAge >= 21 && hasValidID) {
+                document.getElementById("legalDrinkingMessage").textContent = "You are legally allowed to drink with a valid ID.";
+            } else if (userAge >= 21) {
+                document.getElementById("legalDrinkingMessage").textContent = "You are legally allowed to drink.";
+            } else {
+                document.getElementById("legalDrinkingMessage").textContent = "You are not legally allowed to drink.";
+            }
+        }
+
+        // Task 5: String Concatenation
+        function combineNames() {
+            let firstName = prompt("Enter your first name:");
+            let lastName = prompt("Enter your last name:");
+
+            let fullName = firstName + " " + lastName;
+            document.getElementById("greetingMessage").textContent = "Hello, " + fullName + "!";
+        }
+    </script>
+</body>
+</html>

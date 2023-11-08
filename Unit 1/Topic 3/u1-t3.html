@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Basics Assignment</title>
+</head>
+<body>
+    <h1>Welcome to the JavaScript Basics Assignment</h1>
+
+    <!-- The HTML form -->
+    <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- JavaScript code -->
+    <script>
+        // Function to handle form submission
+        document.getElementById("userForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get user input values
+            let name = document.getElementById("name").value;
+            let age = Number(document.getElementById("age").value); // Convert age to a number
+            let email = document.getElementById("email").value;
+
+            // Convert name to uppercase
+            name = name.toUpperCase();
+
+            // Display the welcome message
+            let welcomeMessage = "Hello, " + name + "!";
+            document.getElementById("welcomeMessage").textContent = welcomeMessage;
+
+            // Check the user's age and display a message
+            let ageMessage = "You are " + age + " years old. ";
+            if (age >= 21) {
+                ageMessage += "You are legally allowed to drink.";
+            } else {
+                ageMessage += "You are not legally allowed to drink.";
+            }
+            document.getElementById("ageMessage").textContent = ageMessage;
+        });
+    </script>
+
+    <!-- Output elements -->
+    <p id="welcomeMessage"></p>
+    <p id="ageMessage"></p>
+</body>
+</html>

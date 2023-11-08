@@ -1,0 +1,10 @@
+Describe primitive and object types in JavaScript. Give examples of each.
+
+
+Primitive: Primitive values include numbers, strings, booleans, a symbol, null or undefined.
+	   Primitive types can't be changed, they are immutable. 
+	   Ex: let myNumber = 3; //this is primitive type
+
+Object: Object types can be changed, they are mutable. These include the ones not included above.
+	Primitive data types are passed by value, object types are passed by reference.
+	Ex: let this_thing = {name: "Jacob"}; //this is an object type

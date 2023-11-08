@@ -1,0 +1,14 @@
+Describe mutable and immutable values and give examples.
+
+
+Immutable means it can't be changed
+
+Ex: let myString = 'Testing'; //this string can't be changed
+    myString.toUpperCase(); //this returns 'TESTING' but doesn't change the myString variable to 'TESTING'
+
+
+
+Mutable means it can be changed
+
+Ex: let x = [1, 2, 3];
+    x[3] = 4; //adds the number 4 to the array
