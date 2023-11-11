@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+    <script>
+
+        // Create a variable named age and set it to your age
+        let age = 21
+
+        /* Write an if statement to check if age is greater than or equal to 18.
+        If it is, log "You are an adult" to the console. If not, log "You are a minor." */
+        if (age >= 18) {
+            console.log("You are an adult");
+        } else {
+            console.log("You are a minor");
+        }
+
+
+        /* Create a variable named temperature and set it to a temperature value (in Celsius).
+        Write an if statement to check if temperature is greater than or equal to 30.
+        If it is, log "It's hot outside!" to the console. If not, log "It's cool outside." */
+        function fahrenheitToCelsius(fahrenheit) {
+        let celsius = (fahrenheit - 32) * 5/9;
+        return celsius;
+        }
+
+        let temperatureInFahrenheit = 80; // Change this to the desired temperature in Fahrenheit
+
+        let temperatureInCelsius = fahrenheitToCelsius(temperatureInFahrenheit);
+
+        // if statement for if temp >= 30
+        if (temperatureInCelsius >= 30) {
+        console.log("It's hot outside!");
+        } else {
+        console.log("It's cool outside.");
+        }
+
+
+        // Write a for loop that counts from 1 to 10 and logs each number to the console.
+        for (let i = 1; i <= 10; i++) {
+        console.log(i);
+        }
+
+
+        /* Create an array called fruits with the following fruits: "apple," "banana," "cherry," "date," and
+        "elderberry." Write a for loop that iterates over the fruits array and logs each fruit to the console */
+        const fruits = ["apple", "banana", "cherry", "date", "elderberry"];
+
+        for (let i = 0; i < fruits.length; i++) {
+        console.log(fruits[i]);
+        }
+
+</script>
+
+</body>
+</html>

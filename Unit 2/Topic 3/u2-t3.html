@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+<script>
+
+  //Create an empty array called fruits.
+  const fruits = []
+
+  //Populate the fruits array
+  fruits.push("apple", "banana", "cherry", "date", "elderberry");
+
+  //Print each fruit's name on a new line
+  for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+  }
+
+  //Add a new fruit with the name "fig" to the fruits array.
+  fruits[5] = 'fig';
+
+  //Check if the fruit "date" exists in the fruits array.
+  if (fruits.includes("date")) {
+      console.log("Fruit found");
+  } else {
+    console.log("Fruit not found");
+  }
+
+  //Remove the fruit "banana" from the fruits array if it exists.
+  if (fruits.includes("banana")) {
+      const index = fruits.indexOf("banana")
+      delete fruits[index]
+  }
+
+  //Sort the fruits array in alphabetical order and print the sorted list.
+  fruits.sort()
+  console.log(fruits)
+
+</script>
+
+</body>
+</html>
