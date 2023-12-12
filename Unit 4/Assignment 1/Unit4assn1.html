@@ -1,0 +1,67 @@
+<!--
+    Unit 4 Assignment 1
+    Author: Jacob Thomas
+    Date: 11/28/2023
+    Filename: Unit4assn1.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Speed Options</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="Unit4assn1.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Unit 4 Assignment 1</h1>
+    </header>
+    <article>
+        <h2>High-Speed Internet Plans</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Download Speed (Mbps)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="service1name"></td>
+                    <td id="service1speed"></td>
+                    <script>
+                        document.getElementById("service1name").innerHTML = service1Name;
+                        document.getElementById("service1speed").innerHTML = service1Speed;
+                    </script>
+                </tr>
+                <tr>
+                    <td id="service2name"></td>
+                    <td id="service2speed"></td>
+                    <script>
+                        document.getElementById("service2name").innerHTML = service2Name;
+                        document.getElementById("service2speed").innerHTML = service2Speed;
+                    </script>
+                </tr>
+                <tr>
+                    <td id="service3name"></td>
+                    <td id="service3speed"></td>
+                    <script>
+                        document.getElementById("service3name").innerHTML = service3Name;
+                        document.getElementById("service3speed").innerHTML = service3Speed;
+                    </script>
+                </tr>
+                <tr>
+                    <td id="service4name"></td>
+                    <td id="service4speed"></td>
+                    <script>
+                        document.getElementById("service4name").innerHTML = service4Name;
+                        document.getElementById("service4speed").innerHTML = service4Speed;
+                    </script>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+</body>
+</html>
